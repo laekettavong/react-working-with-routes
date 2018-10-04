@@ -28,7 +28,7 @@ class Courses extends Component {
                                     key={movie.id}
                                     to={{
                                         pathname: `${this.props.match.url}/${movie.id}`,
-                                        search: `title=${movie.title}`
+                                        search: `?title=${movie.title}`
                                     }}>
                                     <article className="Movie" >{movie.title}</article>
                                 </Link>
